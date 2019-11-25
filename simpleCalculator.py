@@ -28,13 +28,13 @@ def calculate():
     num2 = input("Enter second number here: ")
 
     if option == "1":
-        print(addition(int(num1), int(num2)))
+        print(addition(float(num1), float(num2)))
     elif option == "2":
-        print(subtraction(int(num1), int(num2)))
+        print(subtraction(float(num1), float(num2)))
     elif option == "3":
-        print(multiplication(int(num1), int(num2)))
+        print(multiplication(float(num1), float(num2)))
     elif option == "4":
-        print(division(int(num1), int(num2)))
+        print(division(float(num1), float(num2)))
     else:
         print("Input error")
 

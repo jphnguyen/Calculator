@@ -23,19 +23,21 @@ print("(4) Division")
 
 
 def calculate():
-    option = input("please enter your option here: ")
-    num1 = input("Enter first number here: ")
-    num2 = input("Enter second number here: ")
 
-    if option == "1":
-        print(addition(float(num1), float(num2)))
-    elif option == "2":
-        print(subtraction(float(num1), float(num2)))
-    elif option == "3":
-        print(multiplication(float(num1), float(num2)))
-    elif option == "4":
-        print(division(float(num1), float(num2)))
-    else:
-        print("Input error")
+    while True:
+        option = input("please enter your option here: ")
+        num1 = input("Enter first number here: ")
+        num2 = input("Enter second number here: ")
+
+        if option == "1":
+            print(addition(float(num1), float(num2)))
+        elif option == "2":
+            print(subtraction(float(num1), float(num2)))
+        elif option == "3":
+            print(multiplication(float(num1), float(num2)))
+        elif option == "4":
+            print(division(float(num1), float(num2)))
+        else:
+            print("Input error")
 
 calculate()
